@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Love Story</title>
+
+  <!-- Bootstrap CSS (Include in your <head> tag) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap JS (Include before closing </body> tag) -->
+  <script src="https://cdn.jsdelivr.net/npm/bo otstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom Styles -->
+  <style>
+    /* Prevent Navbar overlap with content */
+    .carousel,
+    .container,
+    .hero-section {
+      margin-top: 80px;
+    }
+
+    /* Hero Section Styling */
+    .hero-section {
+      background-color: #f8f9fa;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .hero-section h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-section .btn {
+      margin: 5px;
+    }
+
+    /* Card Styling for Love Story Sections */
+    .card-body {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">StoryHub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+          <!-- Love Story Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="loveStoryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Love Stories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="loveStoryDropdown">
+              <li><a class="dropdown-item" href="#romanticBeginnings">Romantic Beginnings</a></li>
+              <li><a class="dropdown-item" href="#overcomingObstacles">Overcoming Obstacles</a></li>
+              <li><a class="dropdown-item" href="#endlessLove">Endless Love</a></li>
+              <li><a class="dropdown-item" href="#heartfeltConfessions">Heartfelt Confessions</a></li>
+              <li><a class="dropdown-item" href="#unspokenWords">Unspoken Words</a></li>
+            </ul>
+          </li>
+
+          <!-- Optional Extra Menu Items -->
+          <li class="nav-item"><a class="nav-link" href="#loveQuotes">Love Quotes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#loveSongs">Love Songs</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Image Carousel -->
+  <div id="loveStoryCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- First Image -->
+      <div class="carousel-item active">
+        <img src="https://via.placeholder.com/800x400/FF6F61/FFFFFF?text=Romantic+Beginnings" class="d-block w-100" alt="Romantic Beginnings">
+      </div>
+      <!-- Second Image -->
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x400/FF8F7D/FFFFFF?text=Overcoming+Obstacles" class="d-block w-100" alt="Overcoming Obstacles">
+      </div>
+      <!-- Third Image -->
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x400/FF4D3D/FFFFFF?text=Endless+Love" class="d-block w-100" alt="Endless Love">
+      </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#loveStoryCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#loveStoryCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Hero Section with Sub-menu Links -->
+  <div class="hero-section">
+    <h1>Welcome to Love Stories</h1>
+    <p>Explore heartwarming tales of love, romance, and emotions.</p>
+    <a href="#romanticBeginnings" class="btn btn-primary">Romantic Beginnings</a>
+    <a href="#overcomingObstacles" class="btn btn-secondary">Overcoming Obstacles</a>
+    <a href="#endlessLove" class="btn btn-success">Endless Love</a>
+    <a href="#heartfeltConfessions" class="btn btn-danger">Heartfelt Confessions</a>
+    <a href="#unspokenWords" class="btn btn-warning">Unspoken Words</a>
+  </div>
+
+  <!-- Love Story Cards -->
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Card for Romantic Beginnings -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200/FF6F61/FFFFFF?text=Romantic+Beginnings" class="card-img-top" alt="Romantic Beginnings">
+          <div class="card-body">
+            <h5 class="card-title">Romantic Beginnings</h5>
+            <p class="card-text">Discover how love begins in the most unexpected ways. A journey of new beginnings and passion.</p>
+            <a href="#romanticBeginnings" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card for Overcoming Obstacles -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200/FF8F7D/FFFFFF?text=Overcoming+Obstacles" class="card-img-top" alt="Overcoming Obstacles">
+          <div class="card-body">
+            <h5 class="card-title">Overcoming Obstacles</h5>
+            <p class="card-text">Love that endures through challenges. A story of overcoming obstacles together.</p>
+            <a href="#overcomingObstacles" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card for Endless Love -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200/FF4D3D/FFFFFF?text=Endless+Love" class="card-img-top" alt="Endless Love">
+          <div class="card-body">
+            <h5 class="card-title">Endless Love</h5>
+            <p class="card-text">A love story that lasts forever. When hearts never fade, and love knows no bounds.</p>
+            <a href="#endlessLove" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card for Heartfelt Confessions -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200/FF6F61/FFFFFF?text=Heartfelt+Confessions" class="card-img-top" alt="Heartfelt Confessions">
+          <div class="card-body">
+            <h5 class="card-title">Heartfelt Confessions</h5>
+            <p class="card-text">When words from the heart speak louder than actions. True confessions of love.</p>
+            <a href="#heartfeltConfessions" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card for Unspoken Words -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200/FF8F7D/FFFFFF?text=Unspoken+Words" class="card-img-top" alt="Unspoken Words">
+          <div class="card-body">
+            <h5 class="card-title">Unspoken Words</h5>
+            <p class="card-text">Sometimes, love is felt in silence. The connection that words cannot express.</p>
+            <a href="#unspokenWords" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Story - StoryHub</title>
+
+  <!-- Bootstrap CSS (Include in your <head> tag) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Adjusting Navbar height */
+    .navbar {
+      padding:0;
+    }
+
+    /* Hero Section Padding */
+    .hero-section {
+      padding: 5rem 0;
+      text-align: center;
+      background: #FF6F61;
+      color: #fff;
+    }
+
+    /* Story Cards styling */
+    .card-body {
+      text-align: center;
+    }
+
+    /* Custom Button */
+    .btn-custom {
+      background-color: #FF6F61;
+      color: white;
+      border: none;
+    }
+
+    .btn-custom:hover {
+      background-color: #FF4D3D;
+    }
+
+    /* Testimonial Section */
+    .testimonial-section {
+      background-color: #f9f9f9;
+      padding: 3rem 0;
+    }
+
+    /* Container spacing */
+    .container {
+      margin-top: 100px;
+    }
+
+    /* Carousel Image Styling */
+    .carousel-inner img {
+      object-fit: cover;
+    }
+
+  </style>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">StoryHub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+          <!-- Love Story Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="loveStoryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Love Stories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="loveStoryDropdown">
+              <li><a class="dropdown-item" href="#romanticBeginnings">Romantic Beginnings</a></li>
+              <li><a class="dropdown-item" href="#overcomingObstacles">Overcoming Obstacles</a></li>
+              <li><a class="dropdown-item" href="#endlessLove">Endless Love</a></li>
+              <li><a class="dropdown-item" href="#heartfeltConfessions">Heartfelt Confessions</a></li>
+              <li><a class="dropdown-item" href="#unspokenWords">Unspoken Words</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <h1>Welcome to Love Stories</h1>
+    <p>Experience the magic of love through inspiring stories.</p>
+    <a href="#loveStoriesGrid" class="btn btn-custom">Explore Stories</a>
+  </section>
+
+  <!-- Love Story Carousel -->
+  <div id="loveStoryCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- First Image -->
+      <div class="carousel-item active">
+        <img src="https://via.placeholder.com/800x400/FF6F61/FFFFFF?text=Romantic+Beginnings" class="d-block w-100" alt="Romantic Beginnings">
+      </div>
+      <!-- Second Image -->
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x400/FF8F7D/FFFFFF?text=Overcoming+Obstacles" class="d-block w-100" alt="Overcoming Obstacles">
+      </div>
+      <!-- Third Image -->
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x400/FF4D3D/FFFFFF?text=Endless+Love" class="d-block w-100" alt="Endless Love">
+      </div>
+    </div>
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#loveStoryCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#loveStoryCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Love Stories Grid -->
+  <section id="loveStoriesGrid" class="container mt-5">
+    <div class="row">
+      <!-- Romantic Beginnings Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200/FF6F61/FFFFFF?text=Romantic+Beginnings" class="card-img-top" alt="Romantic Beginnings">
+          <div class="card-body">
+            <h5 class="card-title">Romantic Beginnings</h5>
+            <p class="card-text">Discover how love begins in the most unexpected ways. A journey of new beginnings and passion.</p>
+            <a href="#romanticBeginnings" class="btn btn-custom">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overcoming Obstacles Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200/FF8F7D/FFFFFF?text=Overcoming+Obstacles" class="card-img-top" alt="Overcoming Obstacles">
+          <div class="card-body">
+            <h5 class="card-title">Overcoming Obstacles</h5>
+            <p class="card-text">Love that endures through challenges. A story of overcoming obstacles together.</p>
+            <a href="#overcomingObstacles" class="btn btn-custom">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Endless Love Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200/FF4D3D/FFFFFF?text=Endless+Love" class="card-img-top" alt="Endless Love">
+          <div class="card-body">
+            <h5 class="card-title">Endless Love</h5>
+            <p class="card-text">A love story that lasts forever. When hearts never fade, and love knows no bounds.</p>
+            <a href="#endlessLove" class="btn btn-custom">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="testimonial-section">
+    <div class="container">
+      <h2 class="text-center">What Our Readers Say</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <blockquote class="blockquote">
+                <p>"These stories brought tears to my eyes. The journey of love is truly beautiful."</p>
+                <footer class="blockquote-footer">Aisha, Reader</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <blockquote class="blockquote">
+                <p>"Every story is a reminder of the magic of love. A must-read for every romantic soul!"</p>
+                <footer class="blockquote-footer">Ravi, Reader</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <blockquote class="blockquote">
+                <p>"The stories here are so inspiring. I can't stop reading!"</p>
+                <footer class="blockquote-footer">Neha, Reader</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Optional) -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 StoryHub | All Rights Reserved</p>
+  </footer>
+
+</body>
+
+</html>

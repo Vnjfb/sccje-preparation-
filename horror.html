@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horror Stories - StoryHub</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 80px;
+        }
+
+        .story-header {
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 150px 0;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .content-container {
+            margin-top: 40px;
+        }
+
+        .story-content {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">StoryHub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Story Header -->
+    <section class="story-header">
+        <div class="container">
+            <h1 class="display-4">Horror Stories</h1>
+            <p class="lead">Get ready for spine-chilling tales that will keep you up at night!</p>
+        </div>
+    </section>
+
+    <!-- Story Content -->
+    <section class="content-container">
+        <div class="container">
+            <h2 class="mb-4">Story 1: The Haunted House</h2>
+            <div class="story-content">
+                <p>The house on the hill had always been a place of mystery, but no one dared to enter. Until one night, a group of young friends decided to explore...</p>
+                <p>As they entered the dark house, strange noises echoed through the hallways. It wasn't long before they realized they were not alone...</p>
+            </div>
+
+            <h2 class="mb-4 mt-5">Story 2: The Ghost of the Forest</h2>
+            <div class="story-content">
+                <p>Deep in the forest, a ghostly figure lurked, waiting for its next victim. It was said that anyone who entered the forest at night would never return...</p>
+                <p>One fateful night, a traveler ventured into the forest, unknowingly stepping into the realm of the restless spirit...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 StoryHub. All rights reserved. | <a href="#" class="text-white">Privacy Policy</a></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

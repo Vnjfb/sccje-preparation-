@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryHub - Your Story Begins Here</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional: Bootstrap Icons for icons (if needed) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom Styles (optional) -->
+    <style>
+        body {
+            padding-top: 80px;
+        }
+
+        .hero-section {
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 150px 0;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .card img {
+            max-height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">StoryHub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#stories">Stories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#services">Services</a></li>
+                            <li><a class="dropdown-item" href="#blog">Blog</a></li>
+                            <li><a class="dropdown-item" href="#faq">FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <h1 class="display-4">Welcome to StoryHub</h1>
+            <p class="lead">A place where your stories come alive. Share and explore amazing stories from around the world!</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+            <p>StoryHub is a platform where you can share your unique stories, read others' stories, and get inspired to write your own. Whether you're an aspiring writer or a seasoned storyteller, StoryHub offers you a place to express yourself.</p>
+        </div>
+    </section>
+
+    <!-- Stories Section -->
+    <section id="stories" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Stories</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Story 1">
+                        <div class="card-body">
+                            <h5 class="card-title">The Adventure Begins</h5>
+                            <p class="card-text">A thrilling adventure story about a group of explorers who venture into the unknown.</p>
+                            <a href="story1.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Story 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Mystery at Midnight</h5>
+                            <p class="card-text">A gripping mystery that will keep you on the edge of your seat. Can the detective solve the case?</p>
+                            <a href="story2.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Story 3">
+                        <div class="card-body">
+                            <h5 class="card-title">The Last Hope</h5>
+                            <p class="card-text">A heartwarming tale of survival and hope. Can humanity overcome the greatest challenge ever faced?</p>
+                            <a href="story3.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to contribute your story, feel free to reach out to us!</p>
+            <p><strong>Email:</strong> contact@storyhub.com</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 StoryHub. All rights reserved. | <a href="#" class="text-white">Privacy Policy</a></p>
+    </footer>
+
+    <!-- Bootstrap JS (for dropdown and collapsible navbar) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
